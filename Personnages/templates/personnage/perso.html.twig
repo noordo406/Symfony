@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Personnage{% endblock %}
+{% block monTitre %}{{perso.pseudo}}{% endblock %}
+
+{% block body %}
+    <table class="table">
+        <tr class="thead-dark">
+            <th>Image</th>
+            <th>Nom</th>
+            <th>Age</th>
+            <th>Sexe</th>
+            <th>Force</th>
+            <th>Agilité</th>
+            <th>Intelligence</th>
+        </tr>
+        <tr>
+            <td><img src="{{asset('images/personnages/'~ perso.pseudo ~'.png')}}" alt=""></td>
+            <td>{{perso.pseudo}}</td>
+            <td>{{perso.age}}</td>
+            <td>{% if perso.sexe %} Homme {% else %} Femme {% endif %}</td>
+            <td>{{perso.carac.force}}</td>
+            <td>{{perso.carac.agi}}</td>
+            <td>{{perso.carac.intel}}</td>
+        </tr>
+    </table>
+{% endblock %}

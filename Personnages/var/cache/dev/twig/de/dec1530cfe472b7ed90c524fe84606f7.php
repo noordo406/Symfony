@@ -69,6 +69,10 @@ class __TwigTemplate_68519de1232aac9ad676547064e60c7b extends Template
         // line 4
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("personnages");
         echo "\" class=\"nav-link text-muted fs-5\">Personnages</a>
+<a href=\"";
+        // line 5
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("armes");
+        echo "\" class=\"nav-link text-muted fs-5\">Armes</a>
 </nav>
 ";
         
@@ -92,7 +96,7 @@ class __TwigTemplate_68519de1232aac9ad676547064e60c7b extends Template
      */
     public function getDebugInfo()
     {
-        return array (  70 => 4,  66 => 3,  63 => 2,  44 => 1,);
+        return array (  74 => 5,  70 => 4,  66 => 3,  63 => 2,  44 => 1,);
     }
 
     public function getSourceContext()
@@ -101,6 +105,7 @@ class __TwigTemplate_68519de1232aac9ad676547064e60c7b extends Template
 <nav class=\"navbar sticky-top justify-content-start p-3 bg-dark gap-2\">
 <a href=\"{{path(\"accueil\")}}\" class=\"nav-link text-white fs-4 pe-2\">Symfony</a>
 <a href=\"{{path(\"personnages\")}}\" class=\"nav-link text-muted fs-5\">Personnages</a>
+<a href=\"{{path(\"armes\")}}\" class=\"nav-link text-muted fs-5\">Armes</a>
 </nav>
 {% endblock %}", "menu.html.twig", "C:\\Users\\DWWM\\Desktop\\Symfony\\Personnages\\templates\\menu.html.twig");
     }

@@ -16,7 +16,7 @@ if (!\class_exists(App_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerGonVTGN\App_KernelDevDebugContainer([
     'container.build_hash' => 'GonVTGN',
-    'container.build_id' => '91c20dd1',
-    'container.build_time' => 1704208255,
+    'container.build_id' => '142efa39',
+    'container.build_time' => 1704362254,
     'container.runtime_mode' => \in_array(\PHP_SAPI, ['cli', 'phpdbg', 'embed'], true) ? 'web=0' : 'web=1',
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerGonVTGN');

@@ -20,7 +20,11 @@ return [
     'accueil' => [[], ['_controller' => 'App\\Controller\\PersonnageController::index'], [], [['text', '/']], [], [], []],
     'personnages' => [[], ['_controller' => 'App\\Controller\\PersonnageController::persos'], [], [['text', '/personnages']], [], [], []],
     'afficherPersonnage' => [['nom'], ['_controller' => 'App\\Controller\\PersonnageController::afficherPersonnage'], [], [['variable', '/', '[^/]++', 'nom', true], ['text', '/personnages']], [], [], []],
+    'armes' => [[], ['_controller' => 'App\\Controller\\PersonnageController::armes'], [], [['text', '/armes']], [], [], []],
+    'afficherArme' => [['nom'], ['_controller' => 'App\\Controller\\PersonnageController::afficherArme'], [], [['variable', '/', '[^/]++', 'nom', true], ['text', '/armes']], [], [], []],
     'App\Controller\PersonnageController::index' => [[], ['_controller' => 'App\\Controller\\PersonnageController::index'], [], [['text', '/']], [], [], []],
     'App\Controller\PersonnageController::persos' => [[], ['_controller' => 'App\\Controller\\PersonnageController::persos'], [], [['text', '/personnages']], [], [], []],
     'App\Controller\PersonnageController::afficherPersonnage' => [['nom'], ['_controller' => 'App\\Controller\\PersonnageController::afficherPersonnage'], [], [['variable', '/', '[^/]++', 'nom', true], ['text', '/personnages']], [], [], []],
+    'App\Controller\PersonnageController::armes' => [[], ['_controller' => 'App\\Controller\\PersonnageController::armes'], [], [['text', '/armes']], [], [], []],
+    'App\Controller\PersonnageController::afficherArme' => [['nom'], ['_controller' => 'App\\Controller\\PersonnageController::afficherArme'], [], [['variable', '/', '[^/]++', 'nom', true], ['text', '/armes']], [], [], []],
 ];

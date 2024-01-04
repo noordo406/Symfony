@@ -15,13 +15,21 @@ class Personnage {
             "force" => 3,
             "agi" =>  2,
             "intel" =>  4]);
-        $p1 = new Personnage("Racon", 26, true, [
+        $p2 = new Personnage("Racon", 26, true, [
             "force" => 2,
             "agi" =>  3,
             "intel" => 4]);
-        $p1 = new Personnage("Yjk", 21, false, [
+        $p3 = new Personnage("Yjk", 21, false, [
             "force" => 2,
             "agi" =>  5, 
             "intel" => 1]);
+    }
+
+    public static function getPersonnageByName($nom){
+        foreach(self::$personnages as $value){
+            if ($value->pseudo === $nom) {
+                return $value;
+            }
+        }
     }
 }
